@@ -131,7 +131,7 @@ bash $SKILL_DIR/scripts/verify_final.sh <final.mp4> <klip.mp4> <endcard.mp4>
 
 Skrip memeriksa: decode tanpa error, 1080×1920 dengan stream video dan audio, durasi = klip + end card (±0,3 detik, dihitung dari `ffprobe` file klip itu sendiri), kecocokan frame akhir dengan end card dan frame awal dengan klip (SSIM), dan menyimpan `first.png` dan `last.png`. Salin barisnya apa adanya ke laporan.
 
-Tambahan visual: bila tool `vision_analyze` tersedia, lihat `last.png` dan pastikan hook, nama layanan, dan `www.eudeka.id` terbaca dan sesuai katalog. Bila tidak tersedia: `perlu pemeriksaan manual`.
+Tambahan visual: bila tool `vision_analyze` tersedia, lihat `last.png` untuk memastikan nama layanan, `www.eudeka.id`, dan footer terbaca. Untuk memeriksa hook, ambil frame dari video final pada detik (durasi klip + 1,8) dan pastikan hook terbaca serta sesuai katalog. Bila tidak tersedia: `perlu pemeriksaan manual`.
 
 Status tiap butir: `lulus`, `gagal`, atau `perlu pemeriksaan manual`. `berhasil` hanya jika semuanya lulus, termasuk pemeriksaan visual.
 
