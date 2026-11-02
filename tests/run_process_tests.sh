@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Menjalankan uji proses P01-P08 dengan klip sintetis. Tidak menyentuh file lain.
 # Pemakaian: bash tests/run_process_tests.sh <endcard.mp4>
+export LC_ALL=C
 set -u
 HERE="$(cd "$(dirname "$0")/.." && pwd)"
 CARD="${1:?Pemakaian: run_process_tests.sh <endcard.mp4>}"

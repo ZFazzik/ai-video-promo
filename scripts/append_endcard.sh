@@ -2,6 +2,7 @@
 # Menempelkan end card di AKHIR klip. Klip asli tidak diubah (hasil selalu file baru).
 # Pemakaian: append_endcard.sh <klip.mp4> <endcard.mp4> <output.mp4>
 # Log lengkap ditulis ke <output>.log. Kode keluar 0 hanya jika output valid terbentuk.
+export LC_ALL=C
 set -euo pipefail
 
 die() { echo "GAGAL: $*" >&2; exit 1; }

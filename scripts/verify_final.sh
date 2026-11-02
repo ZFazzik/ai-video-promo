@@ -2,6 +2,7 @@
 # Verifikasi mekanis video final (Tahap 6). Hasil tiap butir: lulus / GAGAL / perlu pemeriksaan manual.
 # Pemakaian: verify_final.sh <final.mp4> <klip.mp4> <endcard.mp4> [folder_frame]
 # Frame awal dan akhir disimpan ke folder_frame (first.png, last.png) agar bisa dilihat/dianalisis.
+export LC_ALL=C
 set -u
 [ "$#" -ge 3 ] || { echo "Pemakaian: $0 <final.mp4> <klip.mp4> <endcard.mp4> [folder_frame]" >&2; exit 2; }
 FINAL="$1"; CLIP="$2"; CARD="$3"; FR="${4:-$(dirname "$FINAL")/frames}"
