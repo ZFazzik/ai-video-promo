@@ -1,5 +1,15 @@
 # Changelog
 
+## v0.5.0
+Menyesuaikan aturan dengan end card revisi 3 (animasi `fbd2092`, disetujui pengguna, anggota tim Eudeka, 2 Nov 2026).
+- End card 15 detik (2 detik intro logo + 13 detik isi). Tahap 4 memeriksa durasi sekitar 15 detik (14,7-15,3).
+- Logo kini tertanam: `eudeka!` (paket umum, S1, S3, S4, S5) dan `Kihajar.id` (S2). Aturan 11 ditulis ulang: hanya logo tertanam; logo lain tetap dilarang.
+- Blok kontak baru: tombol "Konsultasi Gratis via Email & WhatsApp", kartu email dan WhatsApp, alamat. `www.eudeka.id` dan menu About Us/Blog/Contact tidak lagi tertanam. Aturan 4 ditulis ulang.
+- Tahap 6: frame hook diambil pada (durasi klip + 4,2) detik, sebelumnya +1,8; pemeriksaan `last.png` memeriksa logo, tombol, email, dan WhatsApp, bukan lagi `www.eudeka.id`.
+- Hook B S4 (`chromebook-b.mp4`) tersedia; S4 memakai aturan hook A/B yang sama dengan sorotan lain.
+- Katalog v0.5.0: elemen tertanam, spesifikasi 15 detik, linimasa, status hook B S4. `ASET-DIBUTUHKAN.md` dirapikan (11 file tersedia).
+- Uji: `tests/test-cases.csv` diperbarui (L11, L23, L26, P01, P08). Skrip uji tidak berubah (durasi diambil dari file end card).
+
 ## v0.4.0
 Menutup celah hasil tinjauan v0.3.2 terhadap skill video-clipping nyata dan lingkungan Hermes kantor.
 - Input: klip dibaca dari `.srt` Clipping Studio (path dari `./clip show`, hanya baca); `.words.json` sebagai cadangan; metadata AI (`title`, `hook`, `reason`) hanya petunjuk karena sering kosong. Tahap 2 mewaspadai salah eja Whisper dan cue pecahan di awal.

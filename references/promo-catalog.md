@@ -1,15 +1,15 @@
-# Katalog Promosi Eudeka (v0.4.0)
+# Katalog Promosi Eudeka (v0.5.0)
 
 Sumber teks sorotan: flyer resmi Eudeka (`assets/eudeka-flyer-source.jpeg`). Status `terverifikasi` dikonfirmasi pengguna (anggota tim Eudeka) pada 28 Okt 2026.
-Hook A/B disetujui pengguna (anggota tim Eudeka) pada 29 Okt 2026, kecuali yang tertulis lain.
+Hook A/B disetujui pengguna (anggota tim Eudeka) pada 29 Okt 2026. Hook B S4 dan desain end card revisi 3 (logo, durasi 15 detik, blok kontak baru) disetujui pengguna (anggota tim Eudeka) pada 2 Nov 2026.
 Agen hanya boleh memakai teks di katalog ini. Teks sudah tertanam di file animasi; jangan menambah klaim, harga, diskon, atau fitur.
 
 ## Elemen yang tertanam di semua end card
 
-- **Tautan promosi:** `www.eudeka.id`
-- **Label tombol:** Konsultasi Gratis
-- **Footer kontak** (disediakan pengguna, anggota tim Eudeka, 1 Nov 2026): menu About Us, Blog, Contact; alamat Jl. Mars Barat I No. 9, Manjahlega, Kec. Rancasari, Kota Bandung, Jawa Barat 40286; email connect@eudeka.id; telepon 0851-1728-5585. Muncul di bagian akhir semua animasi.
-- **Tidak ada logo** dan tidak ada QR code, akun media sosial, klaim "100+ institusi", atau badge Google Partner. Elemen ini sengaja dikeluarkan; jangan ditambahkan tanpa pembaruan katalog.
+- **Logo (intro 2 detik, lalu tetap tampil di atas judul):** `eudeka!` untuk paket umum, S1, S3, S4, S5; `Kihajar.id` (tanpa tagline, obor bergerak) untuk S2.
+- **Tombol:** "Konsultasi Gratis via Email & WhatsApp"
+- **Blok kontak** (disediakan pengguna, anggota tim Eudeka, 1-2 Nov 2026): kartu Email `connect@eudeka.id` dan kartu WhatsApp `0851-1728-5585` berdampingan, lalu alamat Jl. Mars Barat I No. 9, Manjahlega, Kec. Rancasari, Kota Bandung, Jawa Barat 40286. Muncul di bagian akhir semua animasi dan tetap tampil sampai selesai.
+- **Tidak ada URL** (`www.eudeka.id` tidak tertanam sejak v0.5.0), tidak ada menu About Us/Blog/Contact, QR code, akun media sosial, klaim "100+ institusi", badge Google Partner, atau logo Google/Chromebook. Elemen ini sengaja dikeluarkan; jangan ditambahkan tanpa pembaruan katalog.
 
 ## Daftar file animasi (`assets/animasi/`)
 
@@ -19,16 +19,21 @@ Agen hanya boleh memakai teks di katalog ini. Teks sudah tertanam di file animas
 | S1 Lab AI Turnkey | `lab-ai-turnkey-a.mp4` | `lab-ai-turnkey-b.mp4` |
 | S2 Kihajar.id | `kihajar-id-a.mp4` | `kihajar-id-b.mp4` |
 | S3 Google Workspace for Education | `workspace-a.mp4` | `workspace-b.mp4` |
-| S4 Chromebook, ChromeOS Flex & ClassTools | `chromebook-a.mp4` | belum tersedia (menunggu konfirmasi tim) |
+| S4 Chromebook, ChromeOS Flex & ClassTools | `chromebook-a.mp4` | `chromebook-b.mp4` |
 | S5 Pelatihan & Sertifikasi | `pelatihan-sertifikasi-a.mp4` | `pelatihan-sertifikasi-b.mp4` |
 
-Spesifikasi semua file: MP4 H.264, 1080×1920, 25 fps, 6 detik, tanpa audio.
+Spesifikasi semua file: MP4 H.264, 1080×1920, 25 fps, 15 detik (375 frame), tanpa audio.
+
+Linimasa (detik dihitung dari awal end card):
+- 0-2: intro logo di tengah layar, lalu logo pindah ke atas judul.
+- S1-S5: hook tampil sekitar 2,5-5,5 (terbaca penuh kira-kira 4,0-5,0); nama layanan dan kalimat resmi mulai sekitar 5,6; tombol sekitar 7,6; kartu kontak dan alamat sekitar 8,3, lalu tetap tampil sampai detik 15.
+- Paket umum (tanpa hook): headline sekitar 2,4; tombol sekitar 5,9; kartu kontak dan alamat sekitar 6,5.
 
 ## Memilih hook
 
 - **A** (pertanyaan masalah): klip menggambarkan masalah, tantangan, kebingungan, atau mengajukan pertanyaan.
 - **B** (ajakan): klip membahas solusi, cara, atau kabar baik.
-- Ragu = A. S4 selalu A selama B belum tersedia.
+- Ragu = A. Berlaku sama untuk S1-S5, termasuk S4.
 
 ## Paket umum (skor 1, tidak-dapat-ditentukan, atau klip skor 0 yang diminta "tetap pasang")
 
@@ -74,10 +79,10 @@ Spesifikasi semua file: MP4 H.264, 1080×1920, 25 fps, 6 detik, tanpa audio.
 ### S4: Chromebook, ChromeOS Flex & ClassTools
 - **teks-resmi**: Chromebook, ChromeOS Flex & ClassTools.
 - **hook A**: Perangkat belajar siswa sudah siap untuk kelas digital?
-- **hook B (belum tersedia)**: Ada laptop lama di sekolah? Jangan buru-buru dibuang. Menyiratkan laptop lama bisa dipakai lagi lewat ChromeOS Flex; menunggu konfirmasi tim Eudeka.
+- **hook B**: Ada laptop lama di sekolah? Jangan buru-buru dibuang. (Menyiratkan laptop lama bisa dipakai lagi lewat ChromeOS Flex; jangan menjanjikan kompatibilitas perangkat tertentu.)
 - **topik-pemicu**: perangkat belajar siswa; laptop lama di sekolah; manajemen kelas digital berbasis perangkat.
 - **catatan**: tidak ada deskripsi tambahan di flyer; jangan menulis spesifikasi, kompatibilitas, atau harga.
-- **status**: terverifikasi (hook B belum)
+- **status**: terverifikasi (hook B disetujui 2 Nov 2026)
 
 ### S5: Pelatihan & Sertifikasi
 - **teks-resmi**: Pelatihan & Sertifikasi.
