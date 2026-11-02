@@ -163,3 +163,8 @@ Satu klip dianggap benar jika:
 - tidak ada teks promosi di luar katalog, dan tidak ada perubahan di `CLIPPING_DIR`;
 - end card di akhir dan video final lolos Tahap 6;
 - laporan ringkas dan membedakan rencana, tindakan selesai, dan yang belum teruji.
+
+## Catatan pengujian dan locale
+
+- Uji proses: `PROMO_PRESET=ultrafast bash $SKILL_DIR/tests/run_process_tests.sh $SKILL_DIR/assets/animasi/workspace-a.mp4` (beberapa menit; jalankan di background). Harus lulus 8/8.
+- Locale: mesin ini memakai `LC_NUMERIC=id_ID`, sehingga awk menulis koma desimal dan `ffmpeg -ss` gagal. Pertahankan `export LC_ALL=C` di setiap skrip.
