@@ -1,0 +1,14 @@
+# hasil kerja skill (dibuat saat dijalankan, bukan bagian repo)
+promo-output/
+*__promo.mp4
+*__promo.log
+*.tmp.mp4
+frames/
+
+# sementara
+*.log
+.DS_Store
+Thumbs.db
+__pycache__/
+node_modules/
+.env

@@ -1,0 +1,8 @@
+# Skrip bash harus selalu berakhir baris LF (CRLF dari Windows merusak skrip di Linux)
+*.sh text eol=lf
+*.md text eol=lf
+*.csv text eol=lf
+*.mp4 binary
+*.jpeg binary
+*.jpg binary
+*.png binary
